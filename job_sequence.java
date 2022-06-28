@@ -70,26 +70,26 @@ public static void main(String args[])
         int profit=0;
         for(int i=0;i<n;i++)
         {
-         int dl=d[i];
-         dl--;
-        if(s[dl]==null)
-        {
-         s[dl]=job[i];
-         profit+=p[i];
-        }
-        else
-        {
-         while(dl!=-1)
-        {
-          if(s[dl]==null)
-                {
-                 s[dl]=job[i];
-                 profit+=p[i];
-                 break;
-                }
-           dl--;
-         }
-       }
+         	int dl=d[i];
+         	dl--;
+        	if(s[dl]==null)
+        	{
+         		s[dl]=job[i];
+         		profit+=p[i];
+        	}
+        	else
+        	{
+         		while(dl!=-1)
+        		{
+          			if(s[dl]==null)
+                		{
+                 			s[dl]=job[i];
+                 			profit+=p[i];
+                 			break;
+                		}
+           			dl--;
+         		}
+       		}
       }
         for(int i=0;i<max;i++)
         System.out.print("--->"+s[i]);
